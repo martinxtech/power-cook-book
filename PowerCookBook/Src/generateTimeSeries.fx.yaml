@@ -1,0 +1,8 @@
+generateTimeSeries As screen:
+
+    Image1 As image:
+        Height: =764
+        Image: =generate_time_series
+        Width: =818
+        ZIndex: =1
+
