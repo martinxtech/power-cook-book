@@ -6,3 +6,50 @@ generateTimeSeries As screen:
         Width: =818
         ZIndex: =1
 
+    Label1 As label:
+        Text: ="St"
+        X: =980
+        Y: =48
+        ZIndex: =2
+
+    Label2 As label:
+        Fill: =RGBA(237, 237, 237, 1)
+        Text: =VarStart
+        X: =980
+        Y: =88
+        ZIndex: =3
+
+    Label1_1 As label:
+        Text: ="End"
+        X: =1152
+        Y: =48
+        ZIndex: =4
+
+    Label2_1 As label:
+        Fill: =RGBA(237, 237, 237, 1)
+        Text: =VarEnd
+        X: =1152
+        Y: =88
+        ZIndex: =5
+
+    Gallery2 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =446
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =42
+        Width: =322
+        X: =980
+        Y: =149
+        ZIndex: =6
+
+        Label3 As label:
+            Fill: =RGBA(255, 255, 255, 1)
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.SampleHeading
+            X: =4
+            Y: =4
+            ZIndex: =1
+

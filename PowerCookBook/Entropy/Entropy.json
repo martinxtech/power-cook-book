@@ -3,13 +3,20 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Gallery2": 18,
+    "galleryTemplate2": 19,
     "generateTimeSeries": 4,
     "Host": 3,
-    "Image1": 5
+    "Image1": 5,
+    "Label1": 6,
+    "Label1_1": 8,
+    "Label2": 7,
+    "Label2_1": 9,
+    "Label3": 20
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/22/2024 23:07:57",
+  "HeaderLastSavedDateTimeUTC": "03/23/2024 01:05:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
@@ -21,26 +28,44 @@
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "image": 0
+    "gallery": 2,
+    "image": 0,
+    "label": 1
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Gallery2": {},
+    "galleryTemplate2": {},
     "generateTimeSeries": {},
     "Host": {},
-    "Image1": {}
+    "Image1": {},
+    "Label1": {},
+    "Label1_1": {},
+    "Label2": {},
+    "Label2_1": {},
+    "Label3": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Gallery2": 5,
+    "galleryTemplate2": 6,
     "generateTimeSeries": 0,
     "Host": 0,
-    "Image1": 0
+    "Image1": 0,
+    "Label1": 1,
+    "Label1_1": 2,
+    "Label2": 3,
+    "Label2_1": 4,
+    "Label3": 7
   },
   "ResourcesJsonIndices": {
     "Image-generate_time_series": 1,
@@ -50,7 +75,9 @@
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0191994,
-    "ControlCount": {}
+    "ControlCount": {
+      "label": 2
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
