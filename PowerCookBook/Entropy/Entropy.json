@@ -3,6 +3,7 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Button1": 21,
     "Gallery2": 18,
     "galleryTemplate2": 19,
     "generateTimeSeries": 4,
@@ -16,7 +17,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/23/2024 01:05:03",
+  "HeaderLastSavedDateTimeUTC": "03/23/2024 01:34:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
@@ -29,18 +30,21 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "CollTimings": 1,
     "CustomGallerySample": 0
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
+    "button": 3,
     "gallery": 2,
     "image": 0,
     "label": 1
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Button1": {},
     "Gallery2": {},
     "galleryTemplate2": {},
     "generateTimeSeries": {},
@@ -56,14 +60,15 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Button1": 8,
     "Gallery2": 5,
     "galleryTemplate2": 6,
     "generateTimeSeries": 0,
     "Host": 0,
     "Image1": 0,
     "Label1": 1,
-    "Label1_1": 2,
-    "Label2": 3,
+    "Label1_1": 3,
+    "Label2": 2,
     "Label2_1": 4,
     "Label3": 7
   },
