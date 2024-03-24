@@ -38,16 +38,32 @@ generateTimeSeries As screen:
             =Set(VarStart, DateTime(Year(Today()),Month(Today()),Day(Today()),StartHour.Text,StartMin.Text,00,00));
             Set(VarEnd, DateTime(Year(Today()),Month(Today()),Day(Today()),EndHour.Text,EndMin.Text,00,00));
             
-            ClearCollect(TimeSeries,VarStart);
+            UpdateContext({vbTimer:true});
             
-            Collect(TimeSeries,ForAll(Sequence(4),DateAdd(DateTimeValue(VarStart),30,TimeUnit.Minutes)));
+            Collect(TimeSeries,ForAll( Sequence( 10 ), DateAdd( Today(),30,TimeUnit.Minutes ) ));
             
-            Collect(TimeSeries, VarEnd)
+            Set(viCounter,0);
+            Set(viLimit,100);
+            Set(vbTimer,true);
+            
+            If(viCounter<viLimit,
+                Notify(viCounter);
+                viCounter=viCounter+1;
+            ,
+                Set(vbTimer,false);
+            )
+            
+            
+            //ClearCollect(TimeSeries,VarStart);
+            
+            //Collect(TimeSeries,ForAll(Sequence(4),DateAdd(DateTimeValue(VarStart),30,TimeUnit.Minutes)));
+            
+            //Collect(TimeSeries, VarEnd)
+            
+            //Text( DateAdd( Now(), ‑30, TimeUnit.Minutes ),"dd-mm-yyyy hh:mm" )
             
             //Set(VarNext,Text(DateAdd(DateTimeValue(VarStart),30,TimeUnit.Minutes),"dd-mm-yyyy hh:mm" ));
             //ForAll( Sequence( 10 ), DateAdd( Today(), Value, Days ) )
-            
-            
             
             //Text( DateAdd( Now(), ‑30, TimeUnit.Minutes ),"dd-mm-yyyy hh:mm" )
         RadiusBottomLeft: =0
@@ -62,7 +78,9 @@ generateTimeSeries As screen:
 
     Label2 As label:
         Height: =36
-        Text: =TimeValue(VarEnd)
+        Text: |-
+            =TimeValue(DateAdd(VarStart,30,TimeUnit.Minutes))
+            //Text( DateAdd( Now(), ‑30, TimeUnit.Minutes ),"dd-mm-yyyy hh:mm" )
         Width: =208
         X: =860
         Y: =560
@@ -161,4 +179,24 @@ generateTimeSeries As screen:
             X: =999
             Y: =70
             ZIndex: =13
+
+    Timer1 As timer:
+        Duration: =1
+        OnTimerEnd: |-
+            =If(viCounter<viLimit,
+                Notify(viCounter);
+                viCounter=viCounter+1;
+            ,
+                Set(vbTimer,false);
+            )
+        OnTimerStart: |
+            =Set(viCounter,0);
+            Set(viLimit,100);
+            Set(vbTimer,true);
+        Repeat: =true
+        Reset: =vbTimer
+        Start: =vbTimer
+        X: =908
+        Y: =227
+        ZIndex: =15
 

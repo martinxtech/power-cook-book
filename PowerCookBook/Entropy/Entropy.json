@@ -17,12 +17,13 @@
     "StartHour": 16,
     "StartMin": 14,
     "StartTime": 20,
+    "Timer1": 23,
     "TimeSeriesGallery": 10,
     "TimeSeriesLabel": 12
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/24/2024 05:55:39",
+  "HeaderLastSavedDateTimeUTC": "03/24/2024 07:14:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
@@ -53,11 +54,12 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 4,
+    "button": 5,
     "gallery": 3,
     "image": 0,
     "label": 1,
-    "text": 2
+    "text": 2,
+    "timer": 4
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -75,6 +77,7 @@
     "StartHour": {},
     "StartMin": {},
     "StartTime": {},
+    "Timer1": {},
     "TimeSeriesGallery": {},
     "TimeSeriesLabel": {}
   },
@@ -91,11 +94,12 @@
     "Host": 0,
     "Label1": 1,
     "Label1_1": 8,
-    "Label2": 12,
-    "RunButton": 13,
+    "Label2": 13,
+    "RunButton": 14,
     "StartHour": 3,
     "StartMin": 4,
     "StartTime": 2,
+    "Timer1": 12,
     "TimeSeriesGallery": 5,
     "TimeSeriesLabel": 7
   },
