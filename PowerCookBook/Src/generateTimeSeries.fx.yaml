@@ -24,7 +24,7 @@ generateTimeSeries As screen:
             Align: =Align.Center
             Fill: =RGBA(255, 255, 255, 1)
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Value
+            Text: =TimeValue(ThisItem.Value)
             X: =4
             Y: =4
             ZIndex: =1
@@ -38,7 +38,8 @@ generateTimeSeries As screen:
             =Set(VarStart, DateTime(Year(Today()),Month(Today()),Day(Today()),StartHour.Text,StartMin.Text,00,00));
             Set(VarEnd, DateTime(Year(Today()),Month(Today()),Day(Today()),EndHour.Text,EndMin.Text,00,00));
             
-            ClearCollect(TimeSeries,VarStart)
+            ClearCollect(TimeSeries,VarStart);
+            Collect(TimeSeries, VarEnd)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
