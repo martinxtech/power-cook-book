@@ -78,9 +78,7 @@ generateTimeSeries As screen:
 
     Label2 As label:
         Height: =36
-        Text: |-
-            =TimeValue(DateAdd(VarStart,30,TimeUnit.Minutes))
-            //Text( DateAdd( Now(), ‑30, TimeUnit.Minutes ),"dd-mm-yyyy hh:mm" )
+        Text: =TimeValue(DateAdd(VarStart,30,TimeUnit.Minutes))
         Width: =208
         X: =860
         Y: =560
