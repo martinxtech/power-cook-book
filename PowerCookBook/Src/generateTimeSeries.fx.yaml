@@ -38,8 +38,12 @@ generateTimeSeries As screen:
             =Set(VarStart, DateTime(Year(Today()),Month(Today()),Day(Today()),StartHour.Text,StartMin.Text,00,00));
             Set(VarEnd, DateTime(Year(Today()),Month(Today()),Day(Today()),EndHour.Text,EndMin.Text,00,00));
             
+            Set(VarNext,Text(DateAdd(DateTimeValue(VarStart),30,TimeUnit.Minutes),"dd-mm-yyyy hh:mm" ));
+            
             ClearCollect(TimeSeries,VarStart);
             Collect(TimeSeries, VarEnd)
+            
+            //Text( DateAdd( Now(), ‑30, TimeUnit.Minutes ),"dd-mm-yyyy hh:mm" )
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -52,7 +56,7 @@ generateTimeSeries As screen:
 
     Label2 As label:
         Height: =36
-        Text: =TimeValue(VarStart)
+        Text: =TimeValue(VarNext)
         Width: =208
         X: =860
         Y: =560
