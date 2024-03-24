@@ -99,7 +99,7 @@
       "usenonblockingonstartrule": true,
       "userdefinedfunctions": false,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -118,7 +118,7 @@
     "Id": "e4b9753f-8b08-498e-8557-40234b1e8804",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Cook Book",
     "OriginatingVersion": "1.337",
     "ParserErrorCount": 0,

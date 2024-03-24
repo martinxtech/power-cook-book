@@ -3,21 +3,26 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Button1": 21,
-    "Gallery2": 18,
-    "galleryTemplate2": 19,
+    "Challenge": 5,
+    "EndHour": 17,
+    "EndMin": 15,
+    "EndTime": 21,
+    "galleryTemplate2": 11,
     "generateTimeSeries": 4,
     "Host": 3,
-    "Image1": 5,
-    "Label1": 6,
-    "Label1_1": 8,
-    "Label2": 7,
-    "Label2_1": 9,
-    "Label3": 20
+    "Label1": 18,
+    "Label1_1": 19,
+    "Label2": 22,
+    "RunButton": 13,
+    "StartHour": 16,
+    "StartMin": 14,
+    "StartTime": 20,
+    "TimeSeriesGallery": 10,
+    "TimeSeriesLabel": 12
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/23/2024 01:34:23",
+  "HeaderLastSavedDateTimeUTC": "03/24/2024 04:23:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
@@ -25,52 +30,74 @@
     "generate_time_series": "5328a87e-3803-4ab8-8c6b-e1169b288fe3.png"
   },
   "LocalResourceRootPaths": {
-    "generate_time_series": "https://docserverpwaprodeus.blob.core.windows.net/1d444274-333e-4dcb-b71a-7f80cc45c6c2-1/resource/979ddaec-c1b3-498f-8e47-612293699487.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-22T23%3A07%3A20Z&ske=2024-03-23T23%3A22%3A20Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-23T23%3A22%3A20Z&sr=b&sp=r&sig=rP7qDRK72k0DA3D2E0hTmWs95DE9fY1y4XEPbtNtxMc%3D"
+    "generate_time_series": "https://docserverpwaprodwus.blob.core.windows.net/5690054f-f696-475f-9ad4-ea902aa9faf5-1/resource/Assets0Images05328a87e-3803-4ab8-8c6b-e1169b288fe3.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-24T01%3A04%3A31Z&ske=2024-03-25T01%3A19%3A31Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-25T01%3A19%3A31Z&sr=b&sp=r&sig=tY1%2BUOCR9yeVZHy1XSLlFynLPDyFk%2B9lkXqrClJAkQ0%3D"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "CollTimings": 1,
-    "CustomGallerySample": 0
+    "CustomGallerySample": 0,
+    "TimeSeries": 1
   },
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "EndTime": {
+      "EndHour": 1,
+      "EndMin": 2,
+      "Label1_1": 0
+    },
+    "StartTime": {
+      "Label1": 0,
+      "StartHour": 1,
+      "StartMin": 2
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 3,
-    "gallery": 2,
+    "button": 4,
+    "gallery": 3,
     "image": 0,
-    "label": 1
+    "label": 1,
+    "text": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
-    "Button1": {},
-    "Gallery2": {},
+    "Challenge": {},
+    "EndHour": {},
+    "EndMin": {},
+    "EndTime": {},
     "galleryTemplate2": {},
     "generateTimeSeries": {},
     "Host": {},
-    "Image1": {},
     "Label1": {},
     "Label1_1": {},
     "Label2": {},
-    "Label2_1": {},
-    "Label3": {}
+    "RunButton": {},
+    "StartHour": {},
+    "StartMin": {},
+    "StartTime": {},
+    "TimeSeriesGallery": {},
+    "TimeSeriesLabel": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Button1": 8,
-    "Gallery2": 5,
+    "Challenge": 0,
+    "EndHour": 10,
+    "EndMin": 11,
+    "EndTime": 9,
     "galleryTemplate2": 6,
     "generateTimeSeries": 0,
     "Host": 0,
-    "Image1": 0,
     "Label1": 1,
-    "Label1_1": 3,
-    "Label2": 2,
-    "Label2_1": 4,
-    "Label3": 7
+    "Label1_1": 8,
+    "Label2": 12,
+    "RunButton": 13,
+    "StartHour": 3,
+    "StartMin": 4,
+    "StartTime": 2,
+    "TimeSeriesGallery": 5,
+    "TimeSeriesLabel": 7
   },
   "ResourcesJsonIndices": {
     "Image-generate_time_series": 1,
@@ -79,10 +106,17 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0191994,
+    "AnalysisLoadTime": 0.1048199,
     "ControlCount": {
-      "label": 2
-    }
+      "button": 1,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "image": 1,
+      "label": 6,
+      "screen": 1,
+      "text": 3
+    },
+    "DeserializationLoadTime": 5.4062694
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
